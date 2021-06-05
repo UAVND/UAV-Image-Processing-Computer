@@ -59,8 +59,10 @@ From here I think adapting a pretrained polygon or alphanumeric recognition mode
 Documentation
 >OpenCV:
 >https://docs.opencv.org/master/d6/d00/tutorial_py_root.html
+>
 >Tensorflow:
 >https://www.tensorflow.org/install/docker
+>
 >Docker:
 >https://docs.docker.com
 
