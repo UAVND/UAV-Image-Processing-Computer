@@ -51,7 +51,11 @@ docker run /pathToFolderWithTrainingData:/home/TrainingData -it NAME:tag bash
 ## Initial Progress
 So far the isolate.py program takes an image and uses filters and gradient edge detection in opencv to outline regions that are significantly different from the local background of that area. 
 
-TODO add images from this program running
+Original image:
+![image](https://user-images.githubusercontent.com/61067101/120911684-38a93600-c657-11eb-8e35-8b08b7243316.png)
+
+After processing:
+![image](https://user-images.githubusercontent.com/61067101/120911670-19aaa400-c657-11eb-92fc-394c5a626cea.png)
 
 The next steps are to label regions of interest in the images after isolate.py (or a similar program that you design) has been run on the training data, and then use tensorflow to isolate these areas of intrest. 
 
