@@ -19,14 +19,14 @@ GPU support may require a some machine specfic instructions on install, I recomm
 
 TODO: add for AMD gpus, will require a bit more work as there isn't much documentation 
 
-Once docker is installed clone this repository and branch to your machine and use the following command in terminal to build one of the docker containers. This will not work without using sudo with this command.
+Once docker is installed clone this repository and checkout this branch on your machine. Navigate to the UAV-Image-Processing-Computer repository and use the following command in the terminal to build one of the docker containers. This will not work without using sudo with this command. Replave (NAME) with what you want this container to be named.
 ###### CPU only
 ```
-sudo docker command TODO finish this 
+docker build -t NAME .
 ```
 ###### GPU
 ```
-sudo docker:gpu command TODO finish this 
+docker build -t NAME:gpu . 
 ```
 
 ## Accessing the training data
