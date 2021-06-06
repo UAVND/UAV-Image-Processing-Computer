@@ -61,6 +61,11 @@ The next steps are to label regions of interest in the images after isolate.py (
 
 From here I think adapting a pretrained polygon or alphanumeric recognition model to our usecase is probably the easiest solution. The refrences section has links to a few opensource programs but feel free to explore for ones that better fit the project. 
 
+## General Comments
+The docker container has both tensorflow and opencv installed. It will allow you to run scripts that use both as well as there dependcies. Without machine specific setup there is not an effcient way to pipe GUI output to your machine so when running programs in the docker container save them to the working directory and view them later on your machine. 
+
+Upon start up the docker container will give you a warning that you are in root mode, this is necessary as I haven't found a good way to give the container write permissions to the local machine without running in root mode. That said, be careful as files created and deleted inside the docker container will impact your machine outside of the container. (If you can figure at a way to pass write permission through to docker without running in root mode feel free to update the Dockerfiles above)
+
 ## Resources
 Documentation
 >OpenCV:
