@@ -61,4 +61,6 @@ RUN wget https://github.com/opencv/opencv/archive/${OPENCV_VERSION}.zip \
 && rm /${OPENCV_VERSION}.zip \
 && rm -r /opencv-${OPENCV_VERSION}
 
+WORKDIR /home
+RUN git clone https://github.com/UAVND/UAV-Image-Processing-Computer.git
 
